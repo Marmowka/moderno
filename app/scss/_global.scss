@@ -18,11 +18,10 @@ li{
     list-style: none;
 }
 body{
-    font-family: 'Roboto-Regular', sans-serif;
     font-size: 15px;
     line-height: 24px;
     color: $text;
-    font-weight: 400;
+    @include f400;
 }
 .container{
     max-width: 1200px;
@@ -35,8 +34,8 @@ body{
     padding: 0 30px;
 }
 .title{
+    @include f700;
     color: $bg;
-    font-weight: 700;
     font-size: 36px;
     line-height: 60px;
     text-align: center;
