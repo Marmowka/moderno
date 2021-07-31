@@ -99,6 +99,7 @@
     }
 }
 .basket{
+    margin-right: 20px;
     span{
         background-color: $green
     }
@@ -113,7 +114,6 @@
     }
 }
 .user{
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -152,7 +152,6 @@
         @include f700;
     }
 }
-
 .user__menu{
     top: 69px;
     left: 20px;
@@ -163,6 +162,7 @@
     width: 158px;
     height: 0;
     overflow: hidden;
+    z-index: 3;
     a{
         font-size: 12px;
         color: #546e7a;
@@ -172,6 +172,7 @@
 .circle__menu{
     position: absolute;
     top: 69px;
+    z-index: 1;
 }
 .user__box,
 .basket__box,
@@ -192,7 +193,7 @@
 }
 .circle__menu{
     top: 62px;
-    border-top: 1px solid #e0e0e0;
+    // border-top: 1px solid #e0e0e0;
     right: 0;
     height: 0;
     overflow: hidden;
@@ -302,10 +303,12 @@
 .icons-color::before{
     color: $tomato;
 }
-
+.header__btn-menu,
+.menu__btn{
+    display: none;
+}
 // end header
 // start search
-
 .search{
     background-repeat: no-repeat;
     background-size: cover;
@@ -362,10 +365,8 @@
 
     }
 }
-
 // end search
 // start products
-
 .products{
     padding: 110px 0;
     background-color: $gray;
@@ -465,7 +466,6 @@
         }
     }
 }
-
 .products__bottom-btn{
     text-align: center;
     button{
@@ -482,10 +482,8 @@
         }
     }
 }
-
 // end products
 // start products-slider
-
 .product-slider{
     padding: 110px 0 120px;
     .slick-dots{
@@ -513,10 +511,8 @@
         }
     }
 }
-
 // end products-slider
 // start advantages
-
 .advantages{
     background-color: $bg;
     padding: 110px 0;
@@ -532,7 +528,6 @@
     max-width: 370px;
     text-align: center;
     padding: 0 15px;
-
     &:hover{
         .advantages__item-box{
             background-color: $green;
@@ -567,10 +562,8 @@
         font-size: 15px;
     }
 }
-
 // end dvantages
 // start author
-
 .author{
     background-position: center;
     background-repeat: no-repeat;
@@ -607,10 +600,8 @@
     }
 
 }
-
 // end author
 // start tutorial
-
 .tutorial{
     padding: 70px 0 120px;
     &__inner{
@@ -639,10 +630,8 @@
         color: $bg;
     }
 }
-
 // end tutorial
 // start footer
-
 .footer{
     background-color: $bg;
     &__inner{
@@ -659,7 +648,6 @@
         padding: 25px 0 25px;
     }
 }
-
 .footer__col{
     max-width: 270px;
     width: 100%;
@@ -740,7 +728,6 @@
         background-image: url(../images/css_sprites.png);
     }
 }
-
 .link-twitter{
     background-position: 0 -28px;
 }
@@ -759,7 +746,6 @@
     color: #fff;
     font-size: 20px;
 }
-
 .footer__form{
     position: relative;
     input{
@@ -795,7 +781,9 @@
             top: 9px;
             left: 13px;
         }
-
     }
 }
 // end footer
+
+@import 'media';
+

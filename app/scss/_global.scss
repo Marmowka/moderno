@@ -22,6 +22,7 @@ body{
     line-height: 24px;
     color: $text;
     @include f400;
+    overflow-x: hidden;
 }
 .container{
     max-width: 1200px;
