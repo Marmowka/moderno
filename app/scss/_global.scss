@@ -59,7 +59,9 @@ body{
         font-size: 14px;
     }
 }
-
+.jq-selectbox {
+    z-index: 1; 
+}
 @media(max-width: 720px){
     .container-fluid{
         padding: 0 15px;
